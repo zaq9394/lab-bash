@@ -1,0 +1,468 @@
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ ls
+lab-bash/
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ cd lab-bash
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ echo 'Hello World'
+Hello World
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ mkdir new_dir
+ls
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ git add .
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ rm new_dir
+rm: cannot remove 'new_dir': Is a directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ -rm new_dir
+bash: -rm: command not found
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ rm rf new_dir
+rm: cannot remove 'rf': No such file or directory
+rm: cannot remove 'new_dir': Is a directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ rmdir new_dir
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd ..
+p
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ pwd
+/c/Users/Admin/IH-Labs
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ cd lab_bash
+bash: cd: lab_bash: No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ pwd
+/c/Users/Admin/IH-Labs
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ cd lab_bash
+bash: cd: lab_bash: No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ cd IH-Labs
+bash: cd: IH-Labs: No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ ls
+lab-bash/
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ lab-bash
+bash: lab-bash: command not found
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ cd: lab-bash
+bash: cd:: command not found
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ cd..
+bash: cd..: command not found
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ cd ..
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~
+$ pwd
+/c/Users/Admin
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~
+$ cd IH-Labs
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs
+$ cd lab-bash
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp sed.txt
+cp: missing destination file operand after 'sed.txt'
+Try 'cp --help' for more information.
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp sed.txt C:\Users\Admin\IH-Labs\lab-bash\lorem-copy
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls
+C:UsersAdminIH-Labslab-bashlorem-copy  at.txt  at.txte  lorem.txt  sed.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp set.txt ..\\lorem-copy
+cp: cannot stat 'set.txt': No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp sed.txt ..\\lorem-copy
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp lorem.txt;at.txt ..\\lorem-copy
+cp: missing destination file operand after 'lorem.txt'
+Try 'cp --help' for more information.
+bash: at.txt: command not found
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp lorem.txt ; at.txt ..\\lorem.txt
+cp: missing destination file operand after 'lorem.txt'
+Try 'cp --help' for more information.
+bash: at.txt: command not found
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp lorem.txt ..\\lorem.txt ; cp at.txt ..\\lorem.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp lorem.txt ..\\lorem.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp lorem.txt ..\\lorem-copy ; cp at.txt..\\lorem-copy
+cp: missing destination file operand after 'at.txt..\lorem-copy'
+Try 'cp --help' for more information.
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp lorem.txt at.txt ..\\lorem-copy
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem
+c
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat at.txt lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..\\lorem-copy
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem-copy
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ head sed.txt -3
+head: invalid trailing option -- 3
+Try 'head --help' for more information.
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ head śed.txt 3
+head: cannot open 'śed.txt' for reading: No such file or directory
+head: cannot open '3' for reading: No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ head sed.txt 3
+==> sed.txt <==
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+head: cannot open '3' for reading: No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ head sed.txt -3
+head: invalid trailing option -- 3
+Try 'head --help' for more information.
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ head sed.txt 3
+==> sed.txt <==
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+head: cannot open '3' for reading: No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ tail sed.txt 3
+==> sed.txt <==
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+tail: cannot open '3' for reading: No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ echo 'Homo homini lupus'>>sed.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem-copy
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ cd ..\\lorem
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed '/et/i/ET/' at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed '/ET/i/et/' at.txt
+/et/
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+/et/
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+/et/
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+/et/
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+/et/
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+/et/
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+/et/
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -i'/ET/et/' at.txt
+sed: no input files
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ whoami
+Admin
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls -.txt
+ls: unknown option -- .
+Try 'ls --help' for more information.
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls .txt
+ls: cannot access '.txt': No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls \.txt
+ls: cannot access '.txt': No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls \.txt
+ls: cannot access '.txt': No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls '.txt'
+ls: cannot access '.txt': No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls txt
+ls: cannot access 'txt': No such file or directory
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls
+C:UsersAdminIH-Labslab-bashlorem-copy  at.txt  at.txte  lorem.txt  sed.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls at.txt lorem.txt sed.txt
+at.txt  lorem.txt  sed.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls *.txt
+at.txt  lorem.txt  sed.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ wc sed.txt
+  9 131 900 sed.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ wc -l sed.txt
+9 sed.txt
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -i's/ET/et/g' at.txt
+sed: no input files
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/Admin/IH-Labs/lab-bash/lorem
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -i's/ET/et/g'at.txt
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -i's/\ET/\et/g' at.txt
+sed: no input files
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -i's/et/ET/g' at.txt
+sed: no input files
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls|wc -lorem
+wc: unknown option -- o
+Try 'wc --help' for more information.
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls|*lorem|wc -l
+bash: *lorem: command not found
+0
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls *lorem* | wc -l
+2
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -i's/ET/et/g' at.txt
+sed: no input files
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master
