@@ -148,3 +148,6 @@ $ pwd
 Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
 $ ls *lorem* | wc -l
 2
+
+Admin@DESKTOP-S3IHNVG MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -i 's/et/ET/g' at.txt
